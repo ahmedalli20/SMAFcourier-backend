@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  package_type: MyString
+  pick_up_location: MyString
+  drop_off_location: MyString
+  date: MyString
+  departute_time: MyString
+  arrival_time: MyString
+  number_of_kgs: 1
+  price: 1
+
+two:
+  package_type: MyString
+  pick_up_location: MyString
+  drop_off_location: MyString
+  date: MyString
+  departute_time: MyString
+  arrival_time: MyString
+  number_of_kgs: 1
+  price: 1

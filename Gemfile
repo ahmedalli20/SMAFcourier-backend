@@ -11,8 +11,12 @@ gem "sprockets-rails"
 
 # Use sqlite3 as the database for Active Record
 gem "sqlite3", "~> 1.4"
+<<<<<<< HEAD
 # gem 'pg', "~> 1.4.5"
 
+=======
+ gem "rack-cors"
+>>>>>>> d9c9da580d62d22782d7043b6fd347dad3161338
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
@@ -72,4 +76,5 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
-gem "active_model_serializers", "~> 0.10.12"
+# gem "active_model_serializers", "~> 0.10.12"
+gem 'active_model_serializers'
