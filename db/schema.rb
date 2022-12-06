@@ -10,22 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
-ActiveRecord::Schema[7.0].define(version: 2022_12_03_075606) do
-  create_table "users", force: :cascade do |t|
-    t.string "username"
-    t.string "password_digest"
-
-ActiveRecord::Schema[7.0].define(version: 2022_12_03_110827) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_06_071548) do
   create_table "orders", force: :cascade do |t|
     t.string "package_type"
     t.string "pick_up_location"
     t.string "drop_off_location"
     t.string "date"
-    t.string "departute_time"
-    t.string "arrival_time"
+    t.string "sender_name"
     t.integer "number_of_kgs"
-    t.integer "price"
+    t.integer "receiver_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "username"
+    t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
