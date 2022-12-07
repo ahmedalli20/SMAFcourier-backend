@@ -5,6 +5,6 @@ class User < ApplicationRecord
      validates :email, presence: true
     # :confirmation => true,
    
-  has_many :oders
+  # has_many :orders
 
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_06_121402) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_06_162240) do
   create_table "admins", force: :cascade do |t|
     t.string "username"
     t.string "password_digest"
@@ -25,7 +25,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_06_121402) do
     t.string "date"
     t.string "sender_name"
     t.integer "number_of_kgs"
-    t.integer "receiver_name"
+    t.string "receiver_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
