@@ -9,11 +9,11 @@
 
 puts "🐕 Seeding data..."
 
-User.create(username: "Luke", password:"lukasam", password_confirmation:"lukasam")
-User.create(username: "mahrez", password:"mahrezali", password_confirmation:"mahrezali")
-User.create(username: "dembele", password:"dembelee", password_confirmation:"dembelee")
-User.create(username: "dele", password:"deleali", password_confirmation:"deleali")
-User.create(username: "maahir", password:"mahrezy", password_confirmation:"mahrezy")
+User.create(username: "Luke", email:"luke@gmail.com",     password:"lukasam", password_confirmation:"lukasam")
+User.create(username: "mahrez", email:"mahrez@gmail.com",   password:"mahrezali", password_confirmation:"mahrezali")
+User.create(username: "dembele", email:"dembele@gmail.com",  password:"dembelee", password_confirmation:"dembelee")
+User.create(username: "dele",  email:"dele@gmail.com",    password:"deleali", password_confirmation:"deleali")
+User.create(username: "maahir", email:"maahir@gmail.com",   password:"mahrezy", password_confirmation:"mahrezy")
 
 
 puts "✅ Done seeding!"
