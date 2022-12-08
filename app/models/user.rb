@@ -1,8 +1,8 @@
 class User < ApplicationRecord
     has_secure_password
-     validates :username, presence: true
      validates :password, :presence => true,:length => {:within => 6..30},  :on => :create
-     validates :email, presence: true
+     validates :username, presence: true, uniqueness: { case_sensitive: false }
+    validates :email, presence: true, format: { with: URI::MailTo::EMAIL_REGEXP } 
     # :confirmation => true,
    
   # has_many :orders
