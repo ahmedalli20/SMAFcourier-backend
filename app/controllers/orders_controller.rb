@@ -39,7 +39,7 @@ class OrdersController < ApplicationController
     private
 
     def order_params
-        params.permit(:package_type, :pick_up_location, :drop_off_location, :date, :receiver_name, :sender_name, :number_of_kgs)
+        params.permit(:package_type, :pick_up_location, :drop_off_location, :date, :receiver_name, :number_of_kgs)
     end
 
     def order_not_found_method
