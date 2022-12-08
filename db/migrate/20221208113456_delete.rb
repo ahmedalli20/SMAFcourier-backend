@@ -1,4 +1,4 @@
-class RemoveColumn < ActiveRecord::Migration[7.0]
+class Delete < ActiveRecord::Migration[7.0]
   def change
     remove_column :orders, :arrival_time
   end

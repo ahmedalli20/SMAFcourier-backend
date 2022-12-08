@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_06_162240) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_08_113456) do
   create_table "admins", force: :cascade do |t|
     t.string "username"
     t.string "password_digest"
@@ -23,9 +23,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_06_162240) do
     t.string "pick_up_location"
     t.string "drop_off_location"
     t.string "date"
-    t.string "sender_name"
-    t.integer "number_of_kgs"
     t.string "receiver_name"
+    t.integer "number_of_kgs"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

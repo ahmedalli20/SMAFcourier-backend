@@ -19,7 +19,7 @@ User.create(username: "maahir", email:"maahir@gmail.com",   password:"mahrezy", 
 puts "✅ Done seeding!"
 #   Character.create(name: "Luke", movie: movies.first)
 
-order1=Order.create(package_type:"glass", pick_up_location:"Nairobi", drop_off_location:"Chicago" ,date:"10/12/2022" ,sender_name:"Felix Ondullah", receiver_name:"Sugut Anne", number_of_kgs:"2")
-order2=Order.create(package_type:"electronic", pick_up_location:"London", drop_off_location:"Tokyo", date:"5/12/2022" ,sender_name:"Victorine Sugut", receiver_name:"Okoth Alex",number_of_kgs:"10")
-order3=Order.create(package_type:"plastics", pick_up_location:"Moscow", drop_off_location:"Kisumu", date:"23/12/2022", sender_name:"Ahamed Ali", receiver_name:"Moha Ali", number_of_kgs:"30")
-order4=Order.create(package_type:"boxes", pick_up_location:"New York" ,drop_off_location:"Kigali", date:"1/1/2022", sender_name:"Mary Wanyama", receiver_name:"Wanyama Victor" ,number_of_kgs:"28")
+order1=Order.create(package_type:"glass", pick_up_location:"Nairobi", drop_off_location:"Chicago" ,date:"10/12/2022" , receiver_name:"Sugut Anne", number_of_kgs:"2")
+order2=Order.create(package_type:"electronic", pick_up_location:"London", drop_off_location:"Tokyo", date:"5/12/2022", receiver_name:"Okoth Alex",number_of_kgs:"10")
+order3=Order.create(package_type:"plastics", pick_up_location:"Moscow", drop_off_location:"Kisumu", date:"23/12/2022", receiver_name:"Moha Ali", number_of_kgs:"30")
+order4=Order.create(package_type:"boxes", pick_up_location:"New York" ,drop_off_location:"Kigali", date:"1/1/2022", receiver_name:"Wanyama Victor" ,number_of_kgs:"28")
